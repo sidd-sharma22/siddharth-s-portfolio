@@ -53,7 +53,7 @@ const ContactSection = () => {
           <div className="flex justify-center">
             
             {/* Contact Info */}
-            <div className="glass rounded-2xl p-8">
+            <div className="glass rounded-2xl p-8 w-full max-w-lg">
               <h3 className="font-mono font-bold text-xl mb-6">Contact Info</h3>
               
               <div className="space-y-6">
