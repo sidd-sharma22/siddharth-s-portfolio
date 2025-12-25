@@ -51,7 +51,7 @@ const AboutSection = () => {
               Beyond code, I lead the creative vision as{' '}
               <span className="text-primary font-medium">Sub-Lead of Chitrachaya Photography Club</span>, 
               where I manage teams, mentor budding photographers, and capture campus life through my lens. 
-              As a member of <span className="text-foreground font-medium">GDG IIIT Kottayam</span>, 
+              As a member of <span className="text-foreground font-medium">Google Developer Group IIIT Kottayam</span>, 
               I stay at the forefront of Android, Flutter, and Cloud technologies.
             </p>
             
@@ -59,7 +59,7 @@ const AboutSection = () => {
               Currently diving deep into{' '}
               <span className="text-primary font-medium">Generative AI</span> and its applications, 
               while strengthening my foundations in full-stack development. When I'm not coding, 
-              you'll find me exploring photography, learning German, or preparing for my next debate.
+              you'll find me exploring photography, learning German, or preparing for my next skill.
             </p>
 
             <div className="flex flex-wrap gap-3 pt-4">
