@@ -15,7 +15,7 @@ export default {
   	extend: {
   		fontFamily: {
   			mono: [
-  				'JetBrains Mono',
+  				'Source Code Pro',
   				'ui-monospace',
   				'SFMono-Regular',
   				'Menlo',
@@ -26,7 +26,7 @@ export default {
   				'monospace'
   			],
   			sans: [
-  				'Inter',
+  				'Open Sans',
   				'ui-sans-serif',
   				'system-ui',
   				'sans-serif',
@@ -36,6 +36,7 @@ export default {
   				'Noto Color Emoji'
   			],
   			serif: [
+  				'Crimson Pro',
   				'ui-serif',
   				'Georgia',
   				'Cambria',
@@ -154,7 +155,7 @@ export default {
   					boxShadow: '0 0 40px hsl(var(--primary) / 0.5)'
   				}
   			},
-  			'float': {
+  			float: {
   				'0%, 100%': {
   					transform: 'translateY(0)'
   				},
@@ -162,15 +163,15 @@ export default {
   					transform: 'translateY(-10px)'
   				}
   			},
-  			'typing': {
-  				'from': {
+  			typing: {
+  				from: {
   					width: '0'
   				},
-  				'to': {
+  				to: {
   					width: '100%'
   				}
   			},
-  			'blink': {
+  			blink: {
   				'0%, 100%': {
   					opacity: '1'
   				},
@@ -196,9 +197,9 @@ export default {
   			'fade-in-left': 'fade-in-left 0.8s ease-out forwards',
   			'fade-in-right': 'fade-in-right 0.8s ease-out forwards',
   			'glow-pulse': 'glow-pulse 3s ease-in-out infinite',
-  			'float': 'float 6s ease-in-out infinite',
-  			'typing': 'typing 2s steps(30) forwards',
-  			'blink': 'blink 1s infinite',
+  			float: 'float 6s ease-in-out infinite',
+  			typing: 'typing 2s steps(30) forwards',
+  			blink: 'blink 1s infinite',
   			'scale-in': 'scale-in 0.5s ease-out forwards'
   		}
   	}
