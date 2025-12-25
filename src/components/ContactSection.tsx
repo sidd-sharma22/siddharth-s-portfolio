@@ -5,26 +5,26 @@ const ContactSection = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com',
-      username: '@siddharthsharma',
+      href: 'https://github.com/sidd-sharma22',
+      username: '@sidd-sharma22',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/sidd-sharma22/',
       username: 'Siddharth Sharma',
     },
     {
-      icon: Twitter,
+      icon: X,
       label: 'X (Twitter)',
-      href: 'https://twitter.com',
-      username: '@siddharthdev',
+      href: 'https://x.com/sidd_sharma22',
+      username: '@sidd_sharma22',
     },
     {
       icon: Instagram,
       label: 'Instagram',
-      href: 'https://instagram.com',
-      username: '@chitrachaya_sid',
+      href: 'https://instagram.com/osm.views',
+      username: '@osm.views',
       note: 'Creative Gallery',
     },
   ];
@@ -105,54 +105,6 @@ const ContactSection = () => {
                   ))}
                 </div>
               </div>
-            </div>
-
-            {/* Quick Message */}
-            <div className="glass rounded-2xl p-8">
-              <h3 className="font-mono font-bold text-xl mb-6">Send a Message</h3>
-              
-              <form className="space-y-4">
-                <div>
-                  <label className="text-sm text-muted-foreground block mb-2">
-                    Your Name
-                  </label>
-                  <input
-                    type="text"
-                    className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
-                    placeholder="John Doe"
-                  />
-                </div>
-                
-                <div>
-                  <label className="text-sm text-muted-foreground block mb-2">
-                    Your Email
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors"
-                    placeholder="john@example.com"
-                  />
-                </div>
-                
-                <div>
-                  <label className="text-sm text-muted-foreground block mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-xl bg-secondary border border-border focus:border-primary focus:outline-none transition-colors resize-none"
-                    placeholder="Hey Siddharth, I'd like to discuss..."
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  className="w-full px-6 py-4 rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-all duration-300 flex items-center justify-center gap-2 glow-box"
-                >
-                  Send Message
-                  <Send size={18} />
-                </button>
-              </form>
             </div>
           </div>
         </div>
