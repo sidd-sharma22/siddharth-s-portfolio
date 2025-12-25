@@ -50,7 +50,8 @@ const ContactSection = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="flex justify-center">
+            
             {/* Contact Info */}
             <div className="glass rounded-2xl p-8">
               <h3 className="font-mono font-bold text-xl mb-6">Contact Info</h3>
