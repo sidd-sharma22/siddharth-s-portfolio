@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, X } from 'lucide-react';
 
 const HeroSection = () => {
   const roles = ['Full-Stack Developer', 'AI/ML Enthusiast', 'Creative Lead'];
