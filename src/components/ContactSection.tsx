@@ -49,53 +49,58 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="flex justify-center">
+          <div className="max-w-5xl mx-auto"> {/* Increased width slightly to max-w-5xl for better spacing */}
             
-            {/* Contact Info */}
-            <div className="glass rounded-2xl p-8 w-full max-w-lg">
-              <h3 className="font-mono font-bold text-xl mb-6">Contact Info</h3>
+            {/* This grid makes them sit side-by-side on larger screens */}
+            <div className="grid md:grid-cols-2 gap-8">
               
-              <div className="space-y-6">
-                <a
-                  href="mailto:siddharthsharma2219@gmail.com"
-                  className="flex items-center gap-4 group"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Mail className="text-primary" size={20} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Email</p>
-                    <p className="font-medium group-hover:text-primary transition-colors">
-                      siddharthsharma2219@gmail.com
-                    </p>
-                  </div>
-                </a>
+              {/* LEFT CARD: Contact Details */}
+              <div className="glass rounded-2xl p-8 h-full flex flex-col justify-center">
+                <h3 className="font-mono font-bold text-xl mb-8">Contact Details</h3>
                 
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <MapPin className="text-primary" size={20} />
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground">Location</p>
-                    <p className="font-medium">Kottayam, Kerala / Gwalior, MP</p>
+                <div className="space-y-8">
+                  <a
+                    href="mailto:siddharthsharma2219@gmail.com"
+                    className="flex items-center gap-4 group"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <Mail className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Email</p>
+                      <p className="font-medium group-hover:text-primary transition-colors break-all">
+                        siddharthsharma2219@gmail.com
+                      </p>
+                    </div>
+                  </a>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <MapPin className="text-primary" size={20} />
+                    </div>
+                    <div>
+                      <p className="text-sm text-muted-foreground">Location</p>
+                      <p className="font-medium">Kottayam, Kerala / Gwalior, MP</p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              <div className="mt-8 pt-8 border-t border-border">
-                <p className="text-sm text-muted-foreground mb-4">Find me on</p>
-                <div className="grid grid-cols-2 gap-3">
+  
+              {/* RIGHT CARD: Social Links */}
+              <div className="glass rounded-2xl p-8 h-full">
+                <h3 className="font-mono font-bold text-xl mb-8">Find me on</h3>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {socialLinks.map((social) => (
                     <a
                       key={social.label}
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-3 rounded-xl glass-hover group"
+                      className="flex items-center gap-3 p-4 rounded-xl glass-hover group border border-transparent hover:border-primary/10 transition-all"
                     >
                       <social.icon
-                        size={18}
+                        size={20}
                         className="text-muted-foreground group-hover:text-primary transition-colors"
                       />
                       <div>
@@ -110,6 +115,7 @@ const ContactSection = () => {
                   ))}
                 </div>
               </div>
+  
             </div>
           </div>
         </div>
