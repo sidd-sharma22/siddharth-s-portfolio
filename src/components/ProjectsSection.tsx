@@ -1,41 +1,29 @@
-import { ExternalLink, Github, Sparkles, ShoppingCart, Box } from 'lucide-react';
+import { ExternalLink, Github, Briefcase, FileArchive, Terminal } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'GenAI Content Studio',
+      title: 'Khatu Shyam Trading Co.',
       description:
-        'An AI-powered content generation platform that leverages Google Gemini to create marketing copy, blog posts, and social media content with customizable tones and styles.',
-      tech: ['Python', 'Streamlit', 'Google Gemini', 'LangChain'],
-      icon: Sparkles,
-      gradient: 'from-primary/20 to-emerald-500/20',
+        'A B2B digital catalogue designed for a Gwalior-based wholesale distributor. Digitized their inventory of Sentini Flopipes, Paras Tanks, and Johnson Sanitary ware. Features include brand showcase, product categorization (Agri/SWR pipes), and direct WhatsApp business integration.',
+      tech: ['React', 'Next.js', 'Tailwind CSS', 'Vercel'],
+      icon: Briefcase,
+      gradient: 'from-blue-500/20 to-emerald-500/20',
       links: {
-        live: '#',
-        github: '#',
+        live: 'https://khatu-shyam-trading-co.vercel.app',
+        github: '#', // Placeholder if you add it later
       },
     },
     {
-      title: 'ShopFlow E-Commerce',
+      title: 'File Compression Tool',
       description:
-        'A full-stack e-commerce platform with user authentication, product management, shopping cart, payment integration, and real-time order tracking.',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind'],
-      icon: ShoppingCart,
-      gradient: 'from-blue-500/20 to-primary/20',
+        'A high-performance command-line tool built to compress and decompress text files without data loss. Implemented Huffman Coding algorithm to analyze character frequency and generate optimal binary trees, achieving up to 40% reduction in file size for text-heavy datasets.',
+      tech: ['C++', 'DSA', 'Huffman Coding'],
+      icon: FileArchive,
+      gradient: 'from-slate-500/20 to-green-500/20',
       links: {
-        live: '#',
-        github: '#',
-      },
-    },
-    {
-      title: '3D Interactive Portfolio',
-      description:
-        'An immersive 3D portfolio experience built with Three.js featuring interactive elements, smooth animations, and creative storytelling through code.',
-      tech: ['Three.js', 'React', 'GSAP', 'WebGL'],
-      icon: Box,
-      gradient: 'from-purple-500/20 to-primary/20',
-      links: {
-        live: '#',
-        github: '#',
+        live: null,
+        github: null,
       },
     },
   ];
@@ -53,7 +41,7 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {projects.map((project, index) => (
             <div
               key={project.title}
@@ -99,20 +87,35 @@ const ProjectsSection = () => {
 
                 {/* Links */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.links.github}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <Github size={16} />
-                    Code
-                  </a>
-                  <a
-                    href={project.links.live}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </a>
+                  {project.links.github ? (
+                    <a
+                      href={project.links.github}
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <Github size={16} />
+                      Code
+                    </a>
+                  ) : null}
+
+                  {project.links.live ? (
+                    <a
+                      href={project.links.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <ExternalLink size={16} />
+                      Live Demo
+                    </a>
+                  ) : null}
+
+                  {/* Fallback for local/CLI projects with no links */}
+                  {!project.links.github && !project.links.live && (
+                     <span className="flex items-center gap-2 text-sm text-muted-foreground cursor-not-allowed opacity-75">
+                        <Terminal size={16} />
+                        Local / CLI Only
+                     </span>
+                  )}
                 </div>
               </div>
             </div>
@@ -121,7 +124,7 @@ const ProjectsSection = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://github.com"
+            href="https://github.com/sidd-sharma22"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl glass-hover font-medium"
