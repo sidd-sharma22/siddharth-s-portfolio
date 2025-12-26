@@ -2,7 +2,7 @@ const TechStackSection = () => {
   const techCategories = [
     {
       title: 'Languages',
-      items: ['C/C++', 'Java', 'Python', 'JavaScript', 'TypeScript'],
+      items: ['C/C++', 'Java', 'Python', 'HTML/CSS', 'JavaScript'],
     },
     {
       title: 'Frameworks & Libraries',
@@ -14,7 +14,7 @@ const TechStackSection = () => {
     },
     {
       title: 'Core Concepts',
-      items: ['DSA', 'OOPs', 'Web Dev', 'GenAI', 'REST APIs'],
+      items: ['DSA', 'OOPs', 'Web Dev', 'GenAI', 'MySQL'],
     },
   ];
 
@@ -70,9 +70,10 @@ const TechStackSection = () => {
               <span className="text-primary">const</span>{' '}
               <span className="text-foreground">developer</span> = {'{'}
               {'\n'}  name: <span className="text-primary">"Siddharth Sharma"</span>,
-              {'\n'}  title: <span className="text-primary">"Full-Stack Developer"</span>,
-              {'\n'}  skills: [<span className="text-primary">"React"</span>, <span className="text-primary">"Node.js"</span>, <span className="text-primary">"Python"</span>, <span className="text-primary">"GenAI"</span>],
-              {'\n'}  available: <span className="text-primary">true</span>
+              {'\n'}  cgpa: <span className="text-primary">7.68</span>,
+              {'\n'}  title: <span className="text-primary">"Full-Stack Student Developer"</span>,
+              {'\n'}  skills: [<span className="text-primary">"React"</span>, <span className="text-primary">"Python"</span>, <span className="text-primary">"GenAI"</span>, <span className="text-primary">"DSA"</span>, <span className="text-primary">"OOPs"</span>]
+              {'\n'}  available: <span className="text-primary">True</span>
               {'\n'}{'}'};
             </code>
           </pre>
