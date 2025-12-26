@@ -26,7 +26,7 @@ const HeroSection = () => {
             
             <p className="text-muted-foreground text-lg md:text-xl mb-4">
               B.Tech CSE Student @{' '}
-              <span className="text-foreground">IIIT Kottayam</span>
+              <span className="text-foreground">Indian Institute of Information Technology Kottayam</span>
             </p>
             
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8">
@@ -56,8 +56,9 @@ const HeroSection = () => {
                 Check My Work
               </a>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1-dKFDm830_r1heSxlzCt6bSZPfgDGpW8/view?usp=sharing"
                 target="_blank"
+                download="Siddharth_Resume.pdf"
                 className="px-8 py-4 rounded-xl glass-hover font-semibold flex items-center justify-center gap-2"
               >
                 Download Resume
@@ -68,9 +69,9 @@ const HeroSection = () => {
             {/* Social Links */}
             <div className="flex gap-4 justify-center lg:justify-start">
               {[
-                { icon: Github, href: 'https://github.com', label: 'GitHub' },
-                { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-                { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+                { icon: Github, href: 'https://github.com/sidd-sharma22', label: 'GitHub' },
+                { icon: Linkedin, href: 'https://www.linkedin.com/in/sidd-sharma22', label: 'LinkedIn' },
+                { icon: X, href: 'https://x.com/sidd_sharma22', label: 'X' },
                 { icon: Mail, href: 'mailto:siddharthsharma2219@gmail.com', label: 'Email' },
               ].map(({ icon: Icon, href, label }) => (
                 <a
@@ -111,7 +112,7 @@ const HeroSection = () => {
               </div>
               
               <div className="absolute -bottom-2 -left-4 px-4 py-2 glass rounded-full text-sm font-mono animate-float animation-delay-200">
-                CGPA: <span className="text-primary">7.52</span>
+                CGPA: <span className="text-primary">7.68</span>
               </div>
             </div>
           </div>
