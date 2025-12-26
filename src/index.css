@@ -14,6 +14,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cascadia+Code&display=swap");
+
 @layer base {
   :root {
     --background: 220 15% 6%;
@@ -60,18 +66,18 @@
     --sidebar-accent-foreground: 210 20% 90%;
     --sidebar-border: 220 15% 20%;
     --sidebar-ring: 142 70% 45%;
-    --font-serif: "Crimson Pro", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
-    --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-    --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --font-serif: "Libre Caslon Text", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    --font-mono: "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --font-sans: Montserrat, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --shadow-sm: 0px 1px 1.5px 0px hsla(0, 0%, 0%, 0.1);
     --shadow: 0px 1px 3px 0px hsla(0, 0%, 0%, 0.1);
     --shadow-md: 0px 1px 4.5px 0px hsla(0, 0%, 0%, 0.1);
     --shadow-lg: 0px 1px 7.5px 0px hsla(0, 0%, 0%, 0.1);
   }
   .dark {
-    --font-serif: "Crimson Pro", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
-    --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-    --font-sans: "Open Sans", ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --font-serif: "Libre Caslon Text", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+    --font-mono: "Cascadia Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --font-sans: Montserrat, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     --radius: 3rem;
     --shadow-sm: 0px 1px 1.5px 0px hsla(0, 0%, 0%, 0.1);
     --shadow: 0px 1px 3px 0px hsla(0, 0%, 0%, 0.1);

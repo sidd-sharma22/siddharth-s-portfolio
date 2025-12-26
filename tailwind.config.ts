@@ -15,7 +15,7 @@ export default {
   	extend: {
   		fontFamily: {
   			mono: [
-  				'Source Code Pro',
+  				'Cascadia Code',
   				'ui-monospace',
   				'SFMono-Regular',
   				'Menlo',
@@ -26,7 +26,7 @@ export default {
   				'monospace'
   			],
   			sans: [
-  				'Open Sans',
+  				'Montserrat',
   				'ui-sans-serif',
   				'system-ui',
   				'sans-serif',
@@ -36,7 +36,7 @@ export default {
   				'Noto Color Emoji'
   			],
   			serif: [
-  				'Crimson Pro',
+  				'Libre Caslon Text',
   				'ui-serif',
   				'Georgia',
   				'Cambria',
