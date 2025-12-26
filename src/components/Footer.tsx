@@ -8,8 +8,6 @@ const Footer = () => {
           <div className="flex items-center gap-2 text-muted-foreground text-sm">
             <span>Built with</span>
             <Heart size={14} className="text-destructive fill-destructive" />
-            <span>&</span>
-            <Code size={14} className="text-primary" />
             <span>by Siddharth Sharma</span>
           </div>
           
