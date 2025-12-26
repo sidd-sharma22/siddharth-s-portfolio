@@ -25,8 +25,8 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-muted-foreground text-lg md:text-xl mb-4">
-              B.Tech Computer Science & Engineering Student {' '} <br/>
-              <span className="text-foreground">Indian Institute of Information Technology Kottayam</span>
+              B.Tech Computer Science Student at {' '} <br/>
+              <span className="text-foreground">Indian Institute of Information Technology, Kottayam</span>
             </p>
             
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-8">
