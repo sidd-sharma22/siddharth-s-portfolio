@@ -37,87 +37,89 @@ const ContactSection = () => {
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="container mx-auto px-6 relative">
-          <div className="text-center mb-16">
-            <p className="text-primary font-mono text-sm mb-2">// Get in Touch</p>
-            <h2 className="section-heading">
-              Let's <span className="gradient-text">Connect</span>
-            </h2>
-            <p className="section-subheading max-w-2xl mx-auto">
-              Open for internships, collaborations, and interesting conversations
-            </p>
-          </div>
+      
+      <div className="container mx-auto px-6 relative">
+        <div className="text-center mb-16">
+          <p className="text-primary font-mono text-sm mb-2">// Get in Touch</p>
+          <h2 className="section-heading">
+            Let's <span className="gradient-text">Connect</span>
+          </h2>
+          <p className="section-subheading max-w-2xl mx-auto">
+            Open for internships, collaborations, and interesting conversations
+          </p>
+        </div>
 
-          <div className="max-w-5xl mx-auto"> {/* Increased width slightly to max-w-5xl for better spacing */}
+        {/* CHANGED: Increased max-width to 5xl (or 6xl) so it spans wider */}
+        <div className="max-w-6xl mx-auto"> 
+          
+          {/* CHANGED: Grid layout allows side-by-side cards on desktop */}
+          <div className="grid md:grid-cols-2 gap-8">
             
-            {/* This grid makes them sit side-by-side on larger screens */}
-            <div className="grid md:grid-cols-2 gap-8">
+            {/* LEFT CARD: Contact Info */}
+            <div className="glass rounded-2xl p-8 h-full flex flex-col justify-center">
+              <h3 className="font-mono font-bold text-xl mb-6">Contact Info</h3>
               
-              {/* LEFT CARD: Contact Details */}
-              <div className="glass rounded-2xl p-8 h-full flex flex-col justify-center">
-                <h3 className="font-mono font-bold text-xl mb-8">Contact Details</h3>
+              <div className="space-y-6">
+                <a
+                  href="mailto:siddharthsharma2219@gmail.com"
+                  className="flex items-center gap-4 group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <Mail className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Email</p>
+                    <p className="font-medium group-hover:text-primary transition-colors break-all">
+                      siddharthsharma2219@gmail.com
+                    </p>
+                  </div>
+                </a>
                 
-                <div className="space-y-8">
-                  <a
-                    href="mailto:siddharthsharma2219@gmail.com"
-                    className="flex items-center gap-4 group"
-                  >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <Mail className="text-primary" size={20} />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">Email</p>
-                      <p className="font-medium group-hover:text-primary transition-colors break-all">
-                        siddharthsharma2219@gmail.com
-                      </p>
-                    </div>
-                  </a>
-                  
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <MapPin className="text-primary" size={20} />
-                    </div>
-                    <div>
-                      <p className="text-sm text-muted-foreground">Location</p>
-                      <p className="font-medium">Kottayam, Kerala / Gwalior, MP</p>
-                    </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <MapPin className="text-primary" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground">Location</p>
+                    <p className="font-medium">Kottayam, Kerala / Gwalior, MP</p>
                   </div>
                 </div>
               </div>
-  
-              {/* RIGHT CARD: Social Links */}
-              <div className="glass rounded-2xl p-8 h-full">
-                <h3 className="font-mono font-bold text-xl mb-8">Find me on</h3>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {socialLinks.map((social) => (
-                    <a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-4 rounded-xl glass-hover group border border-transparent hover:border-primary/10 transition-all"
-                    >
-                      <social.icon
-                        size={20}
-                        className="text-muted-foreground group-hover:text-primary transition-colors"
-                      />
-                      <div>
-                        <p className="text-sm font-medium group-hover:text-primary transition-colors">
-                          {social.label}
-                        </p>
-                        {social.note && (
-                          <p className="text-xs text-muted-foreground">{social.note}</p>
-                        )}
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              </div>
-  
             </div>
+
+            {/* RIGHT CARD: Social Links */}
+            <div className="glass rounded-2xl p-8 h-full">
+              <h3 className="font-mono font-bold text-xl mb-6">Find me on</h3>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 rounded-xl glass-hover group border border-transparent hover:border-primary/10 transition-all"
+                  >
+                    <social.icon
+                      size={20}
+                      className="text-muted-foreground group-hover:text-primary transition-colors"
+                    />
+                    <div>
+                      <p className="text-sm font-medium group-hover:text-primary transition-colors">
+                        {social.label}
+                      </p>
+                      {social.note && (
+                        <p className="text-xs text-muted-foreground">{social.note}</p>
+                      )}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+
           </div>
         </div>
+      </div>
     </section>
   );
 };
