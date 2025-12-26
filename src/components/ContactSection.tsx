@@ -37,17 +37,16 @@ const ContactSection = () => {
     <section id="contact" className="py-24 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      
-      <div className="container mx-auto px-6 relative">
-        <div className="text-center mb-16">
-          <p className="text-primary font-mono text-sm mb-2">// Get in Touch</p>
-          <h2 className="section-heading">
-            Let's <span className="gradient-text">Connect</span>
-          </h2>
-          <p className="section-subheading max-w-2xl mx-auto">
-            Open for internships, collaborations, and interesting conversations
-          </p>
-        </div>
+        <div className="container mx-auto px-6 relative">
+          <div className="text-center mb-16">
+            <p className="text-primary font-mono text-sm mb-2">// Get in Touch</p>
+            <h2 className="section-heading">
+              Let's <span className="gradient-text">Connect</span>
+            </h2>
+            <p className="section-subheading max-w-2xl mx-auto">
+              Open for internships, collaborations, and interesting conversations
+            </p>
+          </div>
 
           <div className="max-w-5xl mx-auto"> {/* Increased width slightly to max-w-5xl for better spacing */}
             
@@ -119,7 +118,6 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 };
