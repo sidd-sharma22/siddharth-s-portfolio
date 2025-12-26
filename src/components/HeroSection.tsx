@@ -25,7 +25,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-muted-foreground text-lg md:text-xl mb-4">
-              B.Tech CSE Student @{' '}
+              B.Tech Computer Science & Engineering Student {' '} <br/>
               <span className="text-foreground">Indian Institute of Information Technology Kottayam</span>
             </p>
             
@@ -56,9 +56,8 @@ const HeroSection = () => {
                 Check My Work
               </a>
               <a
-                href="https://drive.google.com/file/d/1-dKFDm830_r1heSxlzCt6bSZPfgDGpW8/view?usp=sharing"
-                target="_blank"
-                download="Siddharth_Resume.pdf"
+                href="/sidd-resume.pdf" 
+                download="Siddharth_Sharma_Resume.pdf"
                 className="px-8 py-4 rounded-xl glass-hover font-semibold flex items-center justify-center gap-2"
               >
                 Download Resume
@@ -99,11 +98,11 @@ const HeroSection = () => {
               
               {/* Image container */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/30 glow-border">
-                <div className="w-full h-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center">
-                  <span className="font-mono text-6xl md:text-8xl text-primary/50">
-                    SS
-                  </span>
-                </div>
+                <img 
+                  src="/profile-pic.jpg" 
+                  alt="Siddharth Sharma" 
+                  className="w-full h-full object-cover" 
+                />
               </div>
               
               {/* Floating badges */}
