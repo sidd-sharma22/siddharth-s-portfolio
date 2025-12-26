@@ -32,7 +32,7 @@ const Navbar = () => {
           className="font-mono text-lg font-bold text-foreground hover:text-primary transition-colors"
         >
           <span className="text-primary">&lt;</span>
-          Siddharth
+          Siddharth's Portfolio
           <span className="text-primary">/&gt;</span>
         </a>
 
@@ -44,8 +44,8 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="/resume.pdf"
-            target="_blank"
+            href="/sidd-resume.pdf" 
+            download="Siddharth_Sharma_Resume.pdf"
             className="px-4 py-2 rounded-lg bg-primary/10 text-primary border border-primary/30 hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-medium"
           >
             Resume
@@ -76,8 +76,8 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/resume.pdf"
-              target="_blank"
+              href="/sidd-resume.pdf"
+              download="Siddharth_Sharma_Resume.pdf"
               className="px-4 py-3 rounded-lg bg-primary text-primary-foreground text-center font-medium mt-2"
             >
               Resume
