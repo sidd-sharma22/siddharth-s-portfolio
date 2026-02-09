@@ -56,8 +56,8 @@ const HeroSection = () => {
                 Check My Work
               </a>
               <a
-                href="/sidd-resume.pdf" 
-                download="sidd-resume.pdf"
+                href="/Sidd_Resume.pdf" 
+                download="Sidd_Resume.pdf"
                 className="px-8 py-4 rounded-xl glass-hover font-semibold flex items-center justify-center gap-2"
               >
                 Download Resume
